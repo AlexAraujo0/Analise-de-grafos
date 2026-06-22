@@ -185,22 +185,48 @@
 
 <p>Para o futuro do projeto, pretendo disponibilizar um Formulário Google por meio do qual tanto os atuais discentes quanto os egressos da Ilum possam contribuir com seus dados.</p>
 
-<p>No formulário serão preenchidos</p>
+<p>No formulário serão preenchidos: </p>
 
 <ul>
-  <li>Turma</li>
-  <li>Área de interesse</li>
-  <li>Perfil</li>
+  <li>Sigla usada no grafo : Dado real representado</li>
+  <li>Turma
+    <ul>
+      <li>T22</li>
+      <li>T23</li>
+      <li>T24</li>
+      <li>T25</li>
+      <li>T26</li>
+    </ul>
+  </li>
+  
+  <li>Área de interesse
+    <ul>
+      <li>CD: Ciência de dados</li>
+      <li>CV: Ciências da vida</li>
+      <li>CM: Ciências da matéria</li>
+      <li>HU: Humanidades</li>
+      <li>LM: Linguagem matemática</li>
+    </ul>
+  </li>
+  
+  <li>Perfil
+    <ul>
+      <li>TE: Teórico</li>
+      <li>EX: Experimental</li>
+    </ul>
+  </li>
 </ul>
 
 <p>Depois, transformarei estes dados em um <code>DataFrame</code> do módulo <code>pandas</code> e os usarei para gerar um modelo de previsão que alimentará a geração do grafo, fazendo-o deixar de ser aleatório e passando a ser baseado em dados reais, indicando o comportamento dos dados conforme o tamanho da população muda.</p>
+
+<p>Após este passo, planejo também generalizar o modelo para ele poder receber um banco de dados e convertê-lo para um grafo, generalizar os gráficos para que os mesmos sejam condizentes com diferentes grafos e implementar o modelo de previsão para simular a tendência de crescimento dos dados.</p>
 <hr>
 
 <h2 id="observacao">Observação</h2>
 
 <p>
   Os dados utilizados neste projeto são gerados sinteticamente pelo próprio programa. 
-  Portanto, como mencionado em <a href="#melhorias">Próximos passos</a>, os dados apresentados no programa são apenas para fins demonstrativos, não representando dados reais.
+  Portanto, como mencionado em <a href="#melhorias">Próximos passos</a>, os dados apresentados no programa são apenas para fins demonstrativos, não representando dados reais. Além disso, como todos os dados tem a mesma probabilidade de serem selecionados, a ocorrência deles será semelhante, como pode ser observado nos gráficos gerados.
 </p>
 
 <hr>
